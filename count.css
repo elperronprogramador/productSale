@@ -16,12 +16,6 @@ body {
   justify-content: center;
   align-items: center;
 }
-.logo-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 250px;
-}
 .form-container {
   display: flex;
   flex-direction: column;
@@ -30,21 +24,13 @@ body {
   border: none;
   border-radius: 20px;
   padding: 20px;
-}
-img {
-  height: 2.5rem;
-  background-color: red;
-}
-.title-store {
-  font-size: medium;
-  color: var(--color-Principal);
+  justify-content: flex-start;
 }
 .title {
   font-size: larger;
   color: var(--color--black);
-  text-align: center;
   padding-top: 20px;
-  padding-bottom: 0;
+  margin-bottom: 40px;
 }
 .subtitle {
   font-size: small;
@@ -75,4 +61,13 @@ img {
   margin-top: 10px;
   border: none;
   border-radius: 10px;
+}
+@media (max-width: 640px) {
+  .form-containerc {
+    height: 100%;
+  }
+  form {
+    height: 100%;
+    align-items: space-between;
+  }
 }

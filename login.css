@@ -22,6 +22,7 @@ body {
   align-items: center;
   width: 250px;
 }
+
 .form-container {
   display: flex;
   flex-direction: column;
@@ -33,24 +34,14 @@ body {
 }
 img {
   height: 2.5rem;
-  background-color: red;
 }
 .title-store {
   font-size: medium;
   color: var(--color-Principal);
 }
-.title {
-  font-size: larger;
-  color: var(--color--black);
-  text-align: center;
-  padding-top: 20px;
-  padding-bottom: 0;
-}
-.subtitle {
-  font-size: small;
-  color: var(--color-Secundario);
-  text-align: center;
-  margin-top: 0;
+form {
+  display: flex;
+  flex-direction: column;
 }
 .input-entrada {
   display: flex;
@@ -75,4 +66,21 @@ img {
   margin-top: 10px;
   border: none;
   border-radius: 10px;
+  cursor: pointer;
+}
+form a {
+  color: var(--color-Principal);
+  text-align: center;
+  margin-top: 15px;
+}
+.button-sign {
+  width: 100%;
+  background-color: var(--color-Secundario);
+  color: var(--color-white);
+  height: 40px;
+  margin-top: 15px;
+  border: 1px solid var(--color--black);
+  border-radius: 10px;
+  color: var(--color--black);
+  cursor: pointer;
 }

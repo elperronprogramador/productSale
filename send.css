@@ -8,13 +8,23 @@
 }
 body {
   margin: 0;
-}
-.login {
-  width: 100%;
-  height: 100vh;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.principal-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  display: flex;
+  width: 300px;
+  background-color: var(--color--backgraund);
+  border: none;
+  border-radius: 20px;
+  padding: 20px;
 }
 .logo-container {
   display: flex;
@@ -22,22 +32,18 @@ body {
   align-items: center;
   width: 250px;
 }
-.form-container {
-  display: flex;
-  flex-direction: column;
-  width: 300px;
-  background-color: var(--color--backgraund);
-  border: none;
-  border-radius: 20px;
-  padding: 20px;
-}
-img {
+.img {
   height: 2.5rem;
   background-color: red;
 }
 .title-store {
   font-size: medium;
   color: var(--color-Principal);
+}
+.email-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .title {
   font-size: larger;
@@ -52,20 +58,20 @@ img {
   text-align: center;
   margin-top: 0;
 }
-.input-entrada {
+.lsend-container {
   display: flex;
-  flex-direction: column;
-}
-.input {
+  justify-content: center;
   background-color: var(--color--backgraunds);
-  height: 30px;
-  padding: 6px;
+  width: 120px;
+  height: 120px;
+  align-items: center;
+  border-radius: 50%;
   border: none;
-  border-radius: 8px;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
-.input-password {
-  margin-top: 10px;
-  margin-bottom: 10px;
+.lsend-container img {
+  height: 80px;
 }
 .primary-button {
   width: 100%;
@@ -75,4 +81,7 @@ img {
   margin-top: 10px;
   border: none;
   border-radius: 10px;
+}
+.res {
+  color: var(--color-Principal);
 }

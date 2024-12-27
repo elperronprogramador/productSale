@@ -16,35 +16,27 @@ body {
   justify-content: center;
   align-items: center;
 }
-.logo-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 250px;
-}
 .form-container {
   display: flex;
   flex-direction: column;
   width: 300px;
+  height: 100%;
   background-color: var(--color--backgraund);
   border: none;
   border-radius: 20px;
-  padding: 20px;
+  padding: 60px;
+  justify-content: flex-start;
 }
-img {
-  height: 2.5rem;
-  background-color: red;
-}
-.title-store {
-  font-size: medium;
-  color: var(--color-Principal);
+form {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 .title {
   font-size: larger;
   color: var(--color--black);
-  text-align: center;
-  padding-top: 20px;
-  padding-bottom: 0;
+  padding-top: 60px;
 }
 .subtitle {
   font-size: small;
@@ -57,7 +49,7 @@ img {
   flex-direction: column;
 }
 .input {
-  background-color: var(--color--backgraunds);
+  background-color: var(--color-white);
   height: 30px;
   padding: 6px;
   border: none;
@@ -66,13 +58,25 @@ img {
 .input-password {
   margin-top: 10px;
   margin-bottom: 10px;
+  color: var(--color-Secundario);
 }
 .primary-button {
   width: 100%;
-  background-color: var(--color-Principal);
+  background-color: var(--color-Secundario);
   color: var(--color-white);
   height: 40px;
-  margin-top: 10px;
-  border: none;
+  margin-top: 15px;
+  border: 1px solid var(--color--black);
   border-radius: 10px;
+  color: var(--color--black);
+  cursor: pointer;
+}
+@media (max-width: 640px) {
+  .form-containerc {
+    height: 100%;
+  }
+  form {
+    height: 100%;
+    align-items: space-between;
+  }
 }

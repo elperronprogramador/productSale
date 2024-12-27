@@ -1,0 +1,40 @@
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 240px);
+  gap: 1.625rem;
+  place-content: center;
+}
+.product-card {
+  width: 240px;
+}
+.product-card img {
+  width: 240px;
+  border-radius: 20px;
+  object-fit: cover; /*se ajusta al tamaño del padre*/
+}
+.info-card {
+  display: flex;
+  justify-content: space-between;
+}
+.precie-card {
+  display: flex;
+  flex-direction: column;
+  font-size: small;
+}
+.precie-card h2 {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+.precie-card p {
+  margin: 0;
+}
+.logo-container {
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo-container img {
+  height: 40px;
+  width: 100%;
+}
