@@ -1,0 +1,13 @@
+:root{
+    --color-Principal: #31304D;
+    --color-Secundario: #B6BBC4;
+    --color-white:#F0ECE5;
+    --color--black:#161A30;
+    --color--backgraund: #f7f7f7;
+}
+.login{
+    background-color: var(--color-Principal);
+}
+h1{
+    color: var(--color-white);
+}
